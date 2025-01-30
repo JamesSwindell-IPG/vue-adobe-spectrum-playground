@@ -16,6 +16,9 @@
   all contexts and component variables.
 */
 @import '/node_modules/@spectrum-css/button/dist/index.css';
+@import '/node_modules/@spectrum-css/textfield/dist/index.css';
+@import '/node_modules/@spectrum-css/combobox/dist/index.css';
+@import '/node_modules/@spectrum-css/pickerbutton/dist/index.css';
 
 /*
   If you only need the spectrum visual context: For components with

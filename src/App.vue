@@ -1,11 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Heading from './components/HeadingBase.vue'
+import Button from './components/ButtonBase.vue'
+import ComboBox from './components/ComboBox.vue'
+import TextField from './components/TextField.vue'
+</script>
 
 <template>
-  <h1>Vue Adobe Spectrum CSS Playground</h1>
-  <button
-    type="button"
-    class="spectrum-Button spectrum-Button--fill spectrum-Button--accent spectrum-Button--sizeM"
-  >
-    Click Me!
-  </button>
+  <Heading>Vue Adobe Spectrum CSS Playground</Heading>
+  <ComboBox />
+  <TextField />
+  <Button>Click Me!</Button>
 </template>
