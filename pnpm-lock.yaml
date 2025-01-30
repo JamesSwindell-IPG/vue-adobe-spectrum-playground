@@ -12,6 +12,21 @@ importers:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.3)
     devDependencies:
+      '@spectrum-css/button':
+        specifier: ^13.6.1
+        version: 13.6.1(@spectrum-css/icon@8.0.1(@spectrum-css/tokens@15.2.0))(@spectrum-css/tokens@15.2.0)
+      '@spectrum-css/icon':
+        specifier: ^8.0.1
+        version: 8.0.1(@spectrum-css/tokens@15.2.0)
+      '@spectrum-css/page':
+        specifier: ^8.2.1
+        version: 8.2.1(@spectrum-css/tokens@15.2.0)
+      '@spectrum-css/tokens':
+        specifier: ^15.2.0
+        version: 15.2.0
+      '@spectrum-css/typography':
+        specifier: ^7.0.1
+        version: 7.0.1(@spectrum-css/tokens@15.2.0)
       '@tsconfig/node22':
         specifier: ^22.0.0
         version: 22.0.0
@@ -554,6 +569,36 @@ packages:
   '@sindresorhus/merge-streams@4.0.0':
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
+
+  '@spectrum-css/button@13.6.1':
+    resolution: {integrity: sha512-xSKm64PvshMPIQdVcQ2MCX5nXJUS/367fA32Kmpl7RkUWYWGlrTh9sdtJqz3oV4auR6Gq6kJ7PdUbdndAFpApw==}
+    peerDependencies:
+      '@spectrum-css/icon': '>=7'
+      '@spectrum-css/progresscircle': '>=3'
+      '@spectrum-css/tokens': '>=14 || >=15'
+    peerDependenciesMeta:
+      '@spectrum-css/icon':
+        optional: true
+      '@spectrum-css/progresscircle':
+        optional: true
+
+  '@spectrum-css/icon@8.0.1':
+    resolution: {integrity: sha512-kub+/mpckprtwOyZZM8A0PP8TFmUzb2LY5lU9smI9PLSgVlFjmDzYyVRIaTdXw0qzXZY50eudNt7gKvJgcxHpQ==}
+    peerDependencies:
+      '@spectrum-css/tokens': '>=14 || >=15'
+
+  '@spectrum-css/page@8.2.1':
+    resolution: {integrity: sha512-mylgpzFk73wGyjy6hT5dlc0qGBXv20079g8LqRBR7+icubXx6xglWCulYHTWrJveOPtcJF0HS94IMkVtHAhlYA==}
+    peerDependencies:
+      '@spectrum-css/tokens': '>=14 || >=15'
+
+  '@spectrum-css/tokens@15.2.0':
+    resolution: {integrity: sha512-IRUP57EjrzB08fg9NU+4/AW1sc3laHt4+Ou+gm71r6xS9Q//EqeyL+sZ1uy8z+ZnCP1TLMuxu986/gIhuc/QDA==}
+
+  '@spectrum-css/typography@7.0.1':
+    resolution: {integrity: sha512-NAahCVMT3jCl87TGvlDipaUJqRvMyN8TxW7XNCBg/1HFq1rgVCLFptxIf+40J1+zG7jmvkk6m/+TLAU/ryPQsg==}
+    peerDependencies:
+      '@spectrum-css/tokens': '>=14.5.0 || >=15'
 
   '@tsconfig/node22@22.0.0':
     resolution: {integrity: sha512-twLQ77zevtxobBOD4ToAtVmuYrpeYUh3qh+TEp+08IWhpsrIflVHqQ1F1CiPxQGL7doCdBIOOCF+1Tm833faNg==}
@@ -2032,6 +2077,26 @@ snapshots:
   '@sec-ant/readable-stream@0.4.1': {}
 
   '@sindresorhus/merge-streams@4.0.0': {}
+
+  '@spectrum-css/button@13.6.1(@spectrum-css/icon@8.0.1(@spectrum-css/tokens@15.2.0))(@spectrum-css/tokens@15.2.0)':
+    dependencies:
+      '@spectrum-css/tokens': 15.2.0
+    optionalDependencies:
+      '@spectrum-css/icon': 8.0.1(@spectrum-css/tokens@15.2.0)
+
+  '@spectrum-css/icon@8.0.1(@spectrum-css/tokens@15.2.0)':
+    dependencies:
+      '@spectrum-css/tokens': 15.2.0
+
+  '@spectrum-css/page@8.2.1(@spectrum-css/tokens@15.2.0)':
+    dependencies:
+      '@spectrum-css/tokens': 15.2.0
+
+  '@spectrum-css/tokens@15.2.0': {}
+
+  '@spectrum-css/typography@7.0.1(@spectrum-css/tokens@15.2.0)':
+    dependencies:
+      '@spectrum-css/tokens': 15.2.0
 
   '@tsconfig/node22@22.0.0': {}
 
